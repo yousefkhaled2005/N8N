@@ -1,9 +1,10 @@
+# استخدم النسخة الرسمية من n8n
 FROM n8nio/n8n:latest
 
-# Expose the Railway port
+# اعرض البورت اللي Railway هيستخدمه
 EXPOSE ${PORT}
 
-# Use Railway's PORT
+# Variables أساسية للتشغيل
 ENV N8N_PORT=${PORT}
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
